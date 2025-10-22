@@ -16,11 +16,11 @@ $(document).ready(function () {
 
     function insertData(data) {
         // tableBody.empty();
-        data.forEach(u => {
+        data.forEach(user => {
             const row = `<tr>
-                <td>${u.Name}</td>
-                <td>${u.Age}</td>
-                <td>${u.Adress}</td>
+                <td>${user.Name}</td>
+                <td>${user.Age}</td>
+                <td>${user.Adress}</td>
             </tr>`;
             tableBody.append(row);
         });
