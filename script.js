@@ -1,37 +1,48 @@
 $(document).ready(function () {
-    const user = [
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
-        { Name: 'Rafi', Age: 25, Adress: 'Tangail' },
+    const users = [
+        { Name: 'A', Age: 20, Adress: 'Oangail' },
+        { Name: 'B', Age: 22, Adress: 'Uangail' },
+        { Name: 'D', Age: 24, Adress: 'Tangail' },
+        { Name: 'G', Age: 26, Adress: 'Qangail' },
+        { Name: 'W', Age: 28, Adress: 'Hangail' },
+        { Name: 'X', Age: 21, Adress: 'Bangail' },
+        { Name: 'O', Age: 30, Adress: 'Pangail' },
+        { Name: 'Q', Age: 36, Adress: 'Zangail' },
+        { Name: 'T', Age: 60, Adress: 'Vangail' },
+        { Name: 'M', Age: 99, Adress: 'Wangail' },
     ];
 
     const tableBody = $('#tableBody');
 
-    user.forEach(u => {
-        const row = `<tr>
-            <td>${u.Name}</td>
-            <td>${u.Age}</td>
-            <td>${u.Adress}</td>
-        </tr>`;
-        tableBody.append(row);
-    });
-
-    function renderTable(data) {
-        const $tbody = $('#tableBody').empty();
-        data.forEach(row => {
-            $tbody.append(`<tr><td>${row.Name}</td><td>${row.Age}</td><td>${row.Adress}</td></tr>`);
+    function insertData(data) {
+        // tableBody.empty();
+        data.forEach(u => {
+            const row = `<tr>
+                <td>${u.Name}</td>
+                <td>${u.Age}</td>
+                <td>${u.Adress}</td>
+            </tr>`;
+            tableBody.append(row);
         });
     }
 
+    insertData(users);
 
+    let sortColumn = {
+        column: null,
+        ascending: true
+    };
 
+    $('userTable th').on('click', function(){
+        const column  = $(this).data('column');
 
+        if (sortColumn.column === column) {
+            sortColumn.ascending = !sortColumn.ascending;
+        } else {
+            sortColumn.column = column;
+            sortColumn.ascending = true;
+        }
+        
+    });
 
 });
