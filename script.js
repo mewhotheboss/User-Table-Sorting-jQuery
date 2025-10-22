@@ -42,7 +42,7 @@ $(document).ready(function () {
             sortColumn.column = column;
             sortColumn.ascending = true;
         }
-        
+
     });
 
 });
