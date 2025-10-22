@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     insertData(users);
 
-    let sortColumn = {
+    const sortColumn = {
         column: null,
         ascending: true
     };
