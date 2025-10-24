@@ -1,15 +1,15 @@
 $(document).ready(function () {
     const users = [
-        { Name: 'Rafi Shaheb', Age: 25, Adress: 'Tangail' },
-        { Name: 'Tanvir Shaheb', Age: 23, Adress: 'Thonthonia' },
-        { Name: 'Alamin Shaheb', Age: 24, Adress: 'Bogura' },
-        { Name: 'Roni Shaheb', Age: 26, Adress: 'Satmatha' },
-        { Name: 'Soron Shaheb', Age: 25, Adress: 'Rahman Nagar' },
-        { Name: 'Mahinur Shaheb', Age: 27, Adress: 'Bogura' },
-        { Name: 'Robbani Shaheb', Age: 30, Adress: 'Sariyakandi' },
-        { Name: 'Niamul Shaheb', Age: 30, Adress: 'Sariyakandi' },
-        { Name: 'Nazrul Shaheb', Age: 28, Adress: 'Satmatha' },
-        { Name: 'Biplop Shaheb', Age: 26, Adress: 'Thonthonia' },
+        { Name: 'Rafi Saheb', Age: 25, Adress: 'Tangail' },
+        { Name: 'Tanvir Saheb', Age: 23, Adress: 'Thonthonia' },
+        { Name: 'Alamin Saheb', Age: 24, Adress: 'Bogura' },
+        { Name: 'Roni Saheb', Age: 26, Adress: 'Satmatha' },
+        { Name: 'Soron Saheb', Age: 25, Adress: 'Rahman Nagar' },
+        { Name: 'Mahinur Saheb', Age: 27, Adress: 'Bogura' },
+        { Name: 'Robbani Saheb', Age: 30, Adress: 'Sariyakandi' },
+        { Name: 'Niamul Saheb', Age: 30, Adress: 'Sariyakandi' },
+        { Name: 'Nazrul Saheb', Age: 28, Adress: 'Satmatha' },
+        { Name: 'Biplop Saheb', Age: 26, Adress: 'Thonthonia' },
     ];
 
     const tableBody = $('#tableBody');
