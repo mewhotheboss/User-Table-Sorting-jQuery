@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function insertData(data){
         tableBody.innerHTML = " ";
         data.forEach(user => {
-            
+            const row = 
         });
     }
     
