@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     insertData(users);
+
+    const sortColumn = {
+        column: null,
+        ascending: true
+    };
 });
 
 
