@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const users = [
-        { Name: 'Rafi Saheb', Age: 25, Address: 'Tangail' },
-        { Name: 'Tanvir Saheb', Age: 23, Address: 'Thonthonia' },
-        { Name: 'Alamin Saheb', Age: 24, Address: 'Bogura' },
-        { Name: 'Roni Saheb', Age: 26, Address: 'Satmatha' },
-        { Name: 'Soron Saheb', Age: 25, Address: 'Rahman Nagar' },
-        { Name: 'Mahinur Saheb', Age: 27, Address: 'Bogura' },
-        { Name: 'Robbani Saheb', Age: 30, Address: 'Sariyakandi' },
-        { Name: 'Niamul Saheb', Age: 30, Address: 'Sariyakandi' },
-        { Name: 'Nazrul Saheb', Age: 28, Address: 'Satmatha' },
-        { Name: 'Biplop Saheb', Age: 26, Address: 'Thonthonia' },
+        { Name: 'John', Age: 25, Address: 'Canada' },
+        { Name: 'Emma', Age: 30, Address: 'United States' },
+        { Name: 'Liam', Age: 22, Address: 'Australia' },
+        { Name: 'Olivia', Age: 28, Address: 'United Kingdom' },
+        { Name: 'Noah', Age: 35, Address: 'Germany' },
+        { Name: 'Ava', Age: 27, Address: 'France' },
+        { Name: 'Ethan', Age: 24, Address: 'New Zealand' },
+        { Name: 'Sophia', Age: 31, Address: 'Italy' },
+        { Name: 'Mason', Age: 29, Address: 'Brazil' },
+        { Name: 'Isabella', Age: 26, Address: 'Japan' }
     ];
 
     const tableBody = document.getElementById('tableBody');
