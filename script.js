@@ -20,7 +20,7 @@ $(document).ready(function () {
             const row = `<tr>
                 <td>${user.Name}</td>
                 <td>${user.Age}</td>
-                <td>${user.Adress}</td>
+                <td>${user.Address}</td>
             </tr>`;
             tableBody.append(row);
         });
